@@ -109,6 +109,24 @@ docker run -v $(pwd)/mautrix-whatsapp/registration.yaml:/data/registration.yaml:
 docker run --restart unless-stopped -p 29318:29318 -v `pwd`:/data:z dock.mau.dev/tulir/mautrix-whatsapp:latest
 ```
 
+7. Check if the WhatsApp bridge is working properly by checking the logs 
+```
+[Feb  9, 2020 23:34:28] [DEBUG] Initializing database
+[Feb  9, 2020 23:34:28] [DEBUG] Initializing state store
+[Feb  9, 2020 23:34:28] [DEBUG] Initializing Matrix event processor
+[Feb  9, 2020 23:34:28] [DEBUG] Initializing Matrix event handler
+[Feb  9, 2020 23:34:28] [INFO] Bridge initialization complete, starting...
+[Feb  9, 2020 23:34:28] [Database/Upgrade/INFO] Database currently on v12, latest: v12
+[Feb  9, 2020 23:34:28] [DEBUG] Checking connection to homeserver
+[Feb  9, 2020 23:34:28] [DEBUG] Starting application service HTTP server
+[Feb  9, 2020 23:34:28] [DEBUG] Starting event processor
+[Feb  9, 2020 23:34:28] [INFO] Bridge started!
+[Feb  9, 2020 23:34:28] [Matrix/INFO] Listening on 0.0.0.0:29318
+[Feb  9, 2020 23:34:28] [DEBUG] Updating bot profile
+[Feb  9, 2020 23:34:28] [DEBUG] Starting users
+[Feb  9, 2020 23:34:28] [DEBUG] Starting custom puppets
+```
+
 
 
 
