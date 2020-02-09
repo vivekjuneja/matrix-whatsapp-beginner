@@ -128,9 +128,33 @@ docker run --restart unless-stopped -p 29318:29318 -v `pwd`:/data:z dock.mau.dev
 ```
 
 
+**Use a Matrix client to test the setup**
+
+0. I am using the Riot client for this setup 
+
+1. Create an account from the Riot client on the Synapse using the Identity server as the local machine
+
+![](image5.png?raw=true)
 
 
+2. Add the WhatsApp bridge as a new people
 
+![](image4.png?raw=true)
+
+3. WhatsApp bridge bot is added 
+
+![](image3.png?raw=true)
+
+4. Login to WhatsApp using WhatsApp Web. Issue a login command to the WhatsApp bridge bot. Scan the QR code using your WhatsApp client on phone using the WhatsApp web mode. 
+
+![](image2.png?raw=true)
+
+5. Synapse will download all contacts and messages. Pick up an existing contact and send a messge
+
+![](image1.png?raw=true)
+
+**And Viola, everything should have worked so far. Welcome to Matrix and WhatsApp bridge**
+5. 
 
 
 
