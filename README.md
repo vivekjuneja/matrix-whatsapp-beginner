@@ -47,8 +47,8 @@ docker run -d --name synapse-server \
 
 1. Create a directory to host WhatsApp bridge files
 ```
-mkdir mautrix-whatsapp
-cd mautrix-whatsapp
+mkdir $(pwd)/mautrix-whatsapp
+cd $(pwd)/mautrix-whatsapp
 ```
 
 2. Start the bridge container to get the config files
@@ -97,7 +97,7 @@ Add permission in the config.yaml
 ```
 docker stop synapse-server
 docker rm synapse-server
-docker run -v /Users/vivekjuneja/Projects/matrix_experiments/mautrix-whatsapp/registration.yaml:/data/registration.yaml:rw  -d --name synapse-server \
+docker run -v $(pwd)/mautrix-whatsapp/registration.yaml:/data/registration.yaml:rw  -d --name synapse-server \
     --mount type=volume,src=synapse-data-new,dst=/data \
      -v $(pwd)/homeserver.yaml:/data/homeserver.yaml \
     -p 8008:8008 \
