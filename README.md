@@ -43,6 +43,8 @@ docker run -d --name synapse-server \
 
 **Setup the WhatsApp bridge**
 
+(*Some of the instructions were borrowed from https://github.com/tulir/mautrix-whatsapp/wiki*)
+
 1. Create a directory to host WhatsApp bridge files
 ```
 mkdir mautrix-whatsapp
